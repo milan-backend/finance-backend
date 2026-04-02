@@ -9,6 +9,7 @@ from app.database import SessionLocal
 from app.models import User
 from app.core.hashing import hash_password
 from app.core.config import ADMIN_EMAIL, ADMIN_PASSWORD
+import os
 
 
 from app.models import *
@@ -38,13 +39,13 @@ def create_first_admin():
 
     if not admin:
         new_admin = User(
-            email="ADMIN_EMAIL",
-            password=hash_password("ADMIN_PASSWORD"),
+            email=os.getenv("ADMIN_EMAIL"),
+            password=hash_password(os.getenv("ADMIN_PASSWORD")),
             role="admin"
         )
         db.add(new_admin)
         db.commit()
-        print("✅ First admin created: admin@example.com / admin123")
+        print(f"✅ First admin created: {os.getenv('ADMIN_EMAIL')} / {os.getenv('ADMIN_PASSWORD')}")
 
     db.close()
 
