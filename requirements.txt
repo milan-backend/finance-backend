@@ -13,3 +13,5 @@ python-jose
 
 pydantic
 email-validator
+
+python-multipart
