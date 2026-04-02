@@ -22,7 +22,11 @@ Base.metadata.create_all(bind=engine)
 
 @app.get("/")
 def root():
-    return {"message": "Finance API is running "}
+    return {"message": "Welcome To Zorvyn Finance API ",
+            "status": "Running",
+            "documantation": "/docs",
+            "author": "Milan Charan"
+            }
 
 
 
