@@ -225,4 +225,10 @@ password: admin123
 
 ## 👨‍💻 Author
 
-Backend assignment project demonstrating API design, security, and data handling.
+## 👨‍💻 Author
+
+Milan  
+
+Backend Developer passionate about building scalable APIs using FastAPI and PostgreSQL.
+
+This project demonstrates secure authentication, role-based access control, and financial analytics.
