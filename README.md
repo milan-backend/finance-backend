@@ -225,8 +225,6 @@ password: admin123
 
 ## 👨‍💻 Author
 
-## 👨‍💻 Author
-
 Milan  
 
 Backend Developer passionate about building scalable APIs using FastAPI and PostgreSQL.
